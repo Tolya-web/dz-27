@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <form action="" name="anketa" id="anketas" method="post" onSubmit="validateForm();">
+
+        
+Тип записи: <select name="D1" size="1">
+            <option value="Отлично">Отлично </option>
+            <option value="Хорошо">Хорошо </option>
+            <option value="Удовлетворительно">Удовлетворительно </option>
+            <option value="Неудовлетворительно">Неудовлетворительно</option>
+</select><br>
+
+<div>
+    <label for="name">Имя</label>
+    <input id="name" type="text">
+</div>
+<div>
+    <label for="lastname">Фамилия</label>
+    <input id="lastname" type="text">
+</div>
+<div>
+    <label for="patronymic">Отчество</label>
+    <input id="patronymic" type="text">
+</div>
+<div>
+    <label for="age">Возраст</label>
+    <input id="age" type="text">
+</div>
+
+Наличие детей: <INPUT  id="ch" TYPE="checkbox" NAME="ch"><br>
+
+Должность:  <select id="D2" size="1">
+            <option value="Экономист">Экономист </option>
+            <option value="Менеджер">Менеджер </option>
+            <option value="Директор">Директор </option>
+            <option value="Бухгалтер">Бухгалтер</option>
+        </select><br>
+<div>
+     <label for="experience">Стаж</label>
+     <input id="experience" type="text">
+</div>
+            
+<div>
+    <label for="year">Дата принятия на работу:</label>
+    <input id="year" type="text">
+</div>
+
+
+Организация: <select name="D3" size="1">
+             <option value="akvaprom">Аквапром</option>
+             <option value="Alutech">Алютех</option>
+             <option value="Artis">Артис</option>
+             <option value="meridian">Меридиан</option>
+             </select><br>
+            
+ 
+
+<div class="batt">
+<input type="submit" value="Сохранить" onClick="Complete();">
+<input type="reset" value="Очистить">
+</div>
+
+</form>
+<div class="container2">
+<table id="list-anketas">
+    <tr>
+        <td>имя</td>
+        <td>фамилия</td>
+        <td>отчество</td>
+        <td>возраст</td>
+        <td>стаж</td>
+        <td>дата принятия на работу</td>
+        <td>Должность</td>
+        <td>Наличие детей</td>
+        <td>Удалить</td>
+    </tr>
+</table>
+</div>
+</div>
+
+<script src="./anketa.js"></script>
+<script src="./viewanketa.js"></script>
+<script src="./script.js"></script>  
+</body>
+</html>

@@ -1,0 +1,32 @@
+tr{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 4px;
+    background-color: rgb(105, 143, 104);
+    padding: 4px;
+    border-radius: 6px;
+    max-width: 950px;
+    font-family: "Tahoma";
+}
+
+td{
+    background-color: blueviolet;
+    color: #fff;
+    padding: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+   
+}
+form{
+    display: grid;
+    grid-gap: 4px;
+    background-color: rgb(105, 143, 104);
+    padding: 4px;
+    border-radius: 6px;
+    max-width: 350px;
+    font-family: "Tahoma";
+}

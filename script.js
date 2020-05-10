@@ -1,7 +1,7 @@
-/*function validateForm() 
+function validateForm() 
 {
 var validateFlag = true; //Возращаемая функцией логическая переменная
-for (var i=0; i<10; i++) //Проверяем первые 10 поля формы
+for (var i=0; i<6; i++) //Проверяем первые 10 поля формы
 {
 var countElem = document.anketa.elements[i];
 if (countElem.value == '') //Текущий элемент пустой?
@@ -14,7 +14,7 @@ break; //Цикл можно не продолжать
 if (validateFlag) //Если вся анкета заполнена
 alert('Спасибо за заполнение')
 return validateFlag;
-}*/
+}
 document.querySelector('#anketas').addEventListener('submit', function(event){
     var name = document.querySelector('#name').value;
     var lastname = document.querySelector('#lastname').value;
@@ -29,13 +29,13 @@ document.querySelector('#anketas').addEventListener('submit', function(event){
     var anketa = new Anketa(name, lastname, patronymic, age, experience, year, D2, ch);
     var viewanketa = new ViewAnketa();
 
-  /*  if(name === '' || lastname === '' || patronymic === '' || age === '' || experience === '' || year === '' || D2 === ''  ){
+    if(name === '' || lastname === '' || patronymic === '' || age === '' || experience === '' || year === '' || D2 === ''  ){
 
-    } else{*/
+    } else{
         viewanketa.addAnketa(anketa);
       
         viewanketa.clear();
-    //};
+    };
 
     event.preventDefault();
 });
